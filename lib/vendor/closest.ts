@@ -1,8 +1,7 @@
 // element-closest | CC0-1.0 | github.com/jonathantneal/closest
 if (typeof Element !== 'undefined') {
   if (typeof Element.prototype.matches !== 'function') {
-    Element.prototype.matches = Element.prototype.msMatchesSelector ||
-        Element.prototype['mozMatchesSelector'] ||
+    Element.prototype.matches = Element.prototype['mozMatchesSelector'] ||
         Element.prototype.webkitMatchesSelector ||
         function matches(selector) {
           let element = this;
